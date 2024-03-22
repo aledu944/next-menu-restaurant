@@ -3,4 +3,31 @@
 @tailwind utilities;
 
 
+@layer utilities {
+    .nav__container {
+        @apply container grid grid-cols-3 items-center
+    }
 
+    .nav__menu {
+        @apply flex items-center justify-center gap-4 text-sm 
+    }
+    
+    .nav__link {
+        @apply flex items-center gap-2 px-[12px] py-[8px] text-sm rounded-full transition-all transition-all hover:nav__link--active
+    }
+
+    .nav__link--active {
+        @apply bg-gradient-to-br from-orange-400 to-orange-600 text-white 
+    }
+}
+
+
+@layer components {
+    .container {
+        @apply max-w-[95%] lg:max-w-[90%] xl:max-w-[85%] mx-auto
+    }
+
+    .navmenu {
+        @apply py-6 shadow-lg shadow-gray-400/20
+    }
+}
