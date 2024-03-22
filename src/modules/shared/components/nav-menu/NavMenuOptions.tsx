@@ -11,14 +11,14 @@ export const NavMenuOptions = () => {
     return (
         <ul className="nav__menu">
             <li>
-                <Link className={`nav__link ${pathname == '/products' ? 'nav__link--active' : ''}`} href='/products'>
+                <Link className={`nav__link ${pathname.includes('/products') ? 'nav__link--active' : ''}`} href='/products'>
                     <LuStore size={18}/>
                     Productos
                 </Link>
             </li>
 
             <li>
-                <Link className={`nav__link ${pathname == '/categories' ? 'nav__link--active' : ''}`} href='/categories'>
+                <Link className={`nav__link ${pathname.includes('/categories') ? 'nav__link--active' : ''}`} href='/categories'>
                     <span><LuLayers size={18} /></span>
                     Categorias
                 </Link>
