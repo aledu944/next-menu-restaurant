@@ -19,6 +19,14 @@
     .nav__link--active {
         @apply bg-gradient-to-br from-orange-400 to-orange-600 text-white 
     }
+
+    .product-list {
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4
+    }
+    
+    .product__card {
+        @apply bg-white shadow-xl shadow-indigo-300/20 pt-4 pb-6 px-8 rounded-2xl
+    }
 }
 
 
@@ -29,5 +37,14 @@
 
     .navmenu {
         @apply py-6 shadow-lg shadow-gray-400/20
+    }
+
+    .title-page {
+        @apply flex justify-between items-center pt-[3rem] pb-8
+    }
+
+    .btn-primary {
+        @apply flex items-center bg-gradient-to-br from-orange-400 to-orange-600 text-sm text-white px-4 py-3 rounded-xl
+        hover:shadow-lg hover:shadow-orange-400/40 transition-all active:scale-95 
     }
 }

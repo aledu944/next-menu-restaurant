@@ -1,8 +1,19 @@
+import { TitlePage } from "@/modules/shared";
+import { ProductList } from "@/modules/products";
 
 export default function ProductsPage() {
     return (
-        <div>
-            <h1>Hello Page</h1>
-        </div>
+        <>
+            
+            <TitlePage
+                btnPath="/products/new"
+                btnTitle="Agregar producto"
+                description="Listado de productos de tu menu"
+                title="Productos"
+            />
+
+            <ProductList/>
+
+        </>
     );
 }
