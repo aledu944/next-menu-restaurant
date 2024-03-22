@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import { useRouter } from 'next/navigation';
 
 interface Props {
     title: string;
@@ -8,6 +9,13 @@ interface Props {
 }
 
 export const TitlePage = ({ btnPath, btnTitle, description, title }: Props) => {
+
+    const router = useRouter();
+
+    const handleNavigation = () => {
+        router.push(btnPath);
+    }
+
     return (
         <section className='title-page'>
             <div>
@@ -15,7 +23,7 @@ export const TitlePage = ({ btnPath, btnTitle, description, title }: Props) => {
                 <p>{ description }</p>
             </div>
 
-            <button className='btn-primary'>
+            <button onClick={ handleNavigation } className='btn-primary'>
                 { btnTitle }
             </button>
         </section>
