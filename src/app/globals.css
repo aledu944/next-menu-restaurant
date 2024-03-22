@@ -31,6 +31,26 @@
     .product-form {
         @apply bg-white shadow-lg rounded-lg border py-8 px-12
     }
+
+    .category-table {
+        @apply bg-white shadow-xl shadow-indigo-300/10 border py-6 px-8 rounded-lg
+    }
+
+    .category-table__header {
+        @apply font-semibold text-gray-700 text-sm grid grid-cols-4 border-b border-gray-200 pb-2 mb-3
+    }
+
+    .category-table__body {
+        @apply space-y-4 text-sm text-gray-500
+    }
+
+    .category-table__row {
+        @apply grid grid-cols-4
+    }
+
+    .category-table__actions {
+        @apply flex items-center gap-4 text-[16px]
+    }
 }
 
 
